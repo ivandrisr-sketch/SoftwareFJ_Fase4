@@ -2,17 +2,12 @@
 Proyecto: Software FJ - Sistema Integral de Gestión de Clientes, Servicios y Reservas
 Componente Práctico - Fase 4: Prácticas Simuladas
 Curso: Programación (213023) - UNAD
-
-Servicios definidos en el Anexo 3:
-1. Reserva de Salas (ReservaSala)
-2. Alquiler de Equipos (AlquilerEquipo)
-3. Asesorías Especializadas (AsesoriaEspecializada)
 """
 
 import os
 import sys
 
-# Asegurar que el directorio actual del script sea la raíz para importar 'src'
+# Asegurar que la ruta base sea el directorio del script
 DIRECTORIO_ACTUAL = os.path.dirname(os.path.abspath(__file__))
 if DIRECTORIO_ACTUAL not in sys.path:
     sys.path.insert(0, DIRECTORIO_ACTUAL)
@@ -88,7 +83,7 @@ def ejecutar_simulacion_10_operaciones():
         return c_invalido.obtener_resumen()
     ejecutar_operacion(3, "Registro INVÁLIDO de cliente (Nombre con números)", op3)
 
-    # 4. Creación Válida de Servicios (Según las 3 categorías exactas del Anexo 3)
+    # 4. Creación Válida de Servicios (Categorías exactas del Anexo 3)
     def op4():
         s1 = ReservaSala("SAL-01", "Reserva de Sala de Conferencias", 80000.0, capacidad_maxima=25)
         s2 = AlquilerEquipo("EQP-01", "Alquiler de Equipo de Computo", 50000.0, stock_disponible=5)
@@ -157,6 +152,167 @@ def ejecutar_simulacion_10_operaciones():
 
 
 def menu_interactivo():
-    """Menú por consola adaptado estrictamente a los requerimientos del Anexo 3."""
+    """Menú por consola interactivo adaptable al Anexo 3."""
     clientes = [
-        Cliente("1018456789", "Carlos Gomez", "carlos.gomez@correo.com", "31055
+        Cliente("1018456789", "Carlos Gomez", "carlos.gomez@correo.com", "3105551234")
+    ]
+    servicios = [
+        ReservaSala("SAL-01", "Reserva de Sala de Conferencias", 80000.0, capacidad_maxima=25),
+        AlquilerEquipo("EQP-01", "Alquiler de Equipo de Computo", 50000.0, stock_disponible=5),
+        AsesoriaEspecializada("ASE-01", "Asesoria Especializada en Software", 120000.0, especialista="Consultor Senior")
+    ]
+    reservas = []
+
+    while True:
+        print("\n" + "=".center(55, "="))
+        print("          SOFTWARE FJ - SISTEMA DE GESTIÓN")
+        print("                 CONSOLA INTERACTIVA")
+        print("=".center(55, "="))
+        print("1. Registrar nuevo Cliente")
+        print("2. Listar Clientes y Catálogo de Servicios")
+        print("3. Crear y Procesar Reserva")
+        print("4. Confirmar Reserva")
+        print("5. Cancelar Reserva")
+        print("6. Consultar Historial de Reservas")
+        print("7. Re-ejecutar simulación de 10 operaciones")
+        print("8. Salir de la aplicación")
+        print("-" * 55)
+
+        opcion = input("Seleccione una opción (1-8): ").strip()
+
+        if opcion == "1":
+            try:
+                print("\n--- REGISTRAR NUEVO CLIENTE ---")
+                cedula = input("Documento / Cédula: ").strip()
+                nombre = input("Nombre completo: ").strip()
+                correo = input("Correo electrónico: ").strip()
+                telefono = input("Teléfono de contacto: ").strip()
+
+                nuevo = Cliente(cedula, nombre, correo, telefono)
+                clientes.append(nuevo)
+                print(f"\n[OK] {nuevo.obtener_resumen()}")
+            except ErrorDatoInvalido as ex:
+                print(f"\n[ERROR CONTROLADO] {ex}")
+                registrar_error("Falla al registrar cliente desde consola", ex)
+
+        elif opcion == "2":
+            print("\n--- CLIENTES REGISTRADOS ---")
+            if not clientes:
+                print("(No hay clientes registrados en memoria)")
+            for i, c in enumerate(clientes):
+                print(f" [{i}] {c.obtener_resumen()}")
+
+            print("\n--- CATÁLOGO DE SERVICIOS (ANEXO 3) ---")
+            for i, s in enumerate(servicios):
+                print(f" [{i}] {s.obtener_resumen()}")
+
+        elif opcion == "3":
+            try:
+                if not clientes:
+                    print("\n[AVISO] Debe registrar al menos un cliente en la opción 1.")
+                    continue
+
+                print("\n--- CREAR Y PROCESAR RESERVA ---")
+                cod = input("Código de reserva (ej. RES-2001): ").strip()
+
+                print("\nSeleccione el Cliente:")
+                for i, c in enumerate(clientes):
+                    print(f"  [{i}] {c.nombre} (ID: {c.cedula})")
+                idx_c = int(input("Número de cliente: "))
+                cliente_sel = clientes[idx_c]
+
+                print("\nSeleccione el Servicio ofertado:")
+                for i, s in enumerate(servicios):
+                    print(f"  [{i}] {s.nombre}")
+                idx_s = int(input("Número de servicio: "))
+                servicio_sel = servicios[idx_s]
+
+                if isinstance(servicio_sel, ReservaSala):
+                    prompt_unidades = "Ingrese la duración en HORAS de la sala: "
+                elif isinstance(servicio_sel, AlquilerEquipo):
+                    prompt_unidades = "Ingrese la cantidad de EQUIPOS a alquilar: "
+                elif isinstance(servicio_sel, AsesoriaEspecializada):
+                    prompt_unidades = "Ingrese la cantidad de SESIONES de asesoría: "
+                else:
+                    prompt_unidades = "Ingrese las unidades solicitadas: "
+
+                cant = int(input(prompt_unidades))
+
+                nueva_reserva = Reserva(cod, cliente_sel, servicio_sel, cant)
+                total = nueva_reserva.procesar_reserva(descuento=0.05, impuesto=0.19)
+                reservas.append(nueva_reserva)
+                print(f"\n[OK] Reserva procesada satisfactoriamente.")
+                print(f"Detalle: {nueva_reserva.obtener_detalle()}")
+
+            except (ValueError, IndexError):
+                print("\n[ERROR] Debe seleccionar un índice numérico válido de la lista.")
+            except (ErrorDatoInvalido, ErrorServicioNoDisponible, ErrorReservaInvalida) as ex:
+                print(f"\n[EXCEPCIÓN CONTROLADA] {type(ex).__name__}: {ex}")
+                registrar_error("Error al procesar reserva interactiva", ex)
+
+        elif opcion == "4":
+            try:
+                if not reservas:
+                    print("\n[AVISO] No hay reservas disponibles para confirmar.")
+                    continue
+
+                print("\n--- CONFIRMAR RESERVA ---")
+                for i, r in enumerate(reservas):
+                    print(f"  [{i}] {r.obtener_detalle()}")
+                idx_r = int(input("Seleccione el número de reserva a confirmar: "))
+                reservas[idx_r].confirmar()
+                print(f"\n[OK] Reserva #{reservas[idx_r].codigo_reserva} confirmada exitosamente.")
+            except (ValueError, IndexError):
+                print("\n[ERROR] Selección inválida.")
+            except ErrorReservaInvalida as ex:
+                print(f"\n[EXCEPCIÓN CONTROLADA] {ex}")
+
+        elif opcion == "5":
+            try:
+                if not reservas:
+                    print("\n[AVISO] No hay reservas en el sistema.")
+                    continue
+
+                print("\n--- CANCELAR RESERVA ---")
+                for i, r in enumerate(reservas):
+                    print(f"  [{i}] {r.obtener_detalle()}")
+                idx_r = int(input("Seleccione el número de reserva a cancelar: "))
+                motivo = input("Motivo de cancelación: ").strip()
+                reservas[idx_r].cancelar(motivo)
+                print(f"\n[OK] Reserva #{reservas[idx_r].codigo_reserva} cancelada.")
+            except (ValueError, IndexError):
+                print("\n[ERROR] Selección no válida.")
+            except ErrorReservaInvalida as ex:
+                print(f"\n[EXCEPCIÓN CONTROLADA] {ex}")
+
+        elif opcion == "6":
+            print("\n--- HISTORIAL GENERAL DE RESERVAS ---")
+            if not reservas:
+                print("(No se han registrado reservas aún)")
+            for r in reservas:
+                print(f" - {r.obtener_detalle()}")
+
+        elif opcion == "7":
+            ejecutar_simulacion_10_operaciones()
+
+        elif opcion == "8":
+            print("\nCerrando aplicación Software FJ. Auditoría completa en 'logs/app.log'.")
+            break
+
+        else:
+            print("\n[AVISO] Opción inválida. Seleccione un número entre 1 y 8.")
+
+
+if __name__ == "__main__":
+    try:
+        # 1. Ejecución secuencial de la simulación exigida
+        ejecutar_simulacion_10_operaciones()
+
+        # 2. Apertura del menú interactivo por consola
+        menu_interactivo()
+
+    except Exception as error_fatal:
+        print(f"\n[ERROR CRÍTICO] Fallo general del sistema: {error_fatal}")
+    finally:
+        # 3. Mantiene la consola abierta ante ejecuciones por doble clic
+        input("\nPresione ENTER para salir de la ventana...")

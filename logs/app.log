@@ -13,3 +13,124 @@
 2026-11-08 19:10:56 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
 2026-11-08 19:10:56 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó reprogramación por motivos de fuerza mayor.
 2026-11-08 19:10:56 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-50000.0) debe ser un monto mayor a cero.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $364,140.00
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Sala de Capacitación Principal' admite máximo 25 personas (solicitado: 40).
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Switch Allied Telesis 28 Puertos': Solicitados 10, disponibles 3.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó reprogramación por motivos de fuerza mayor.
+2026-11-08 19:18:28 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 19:18:28 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 19:23:44 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1052408984 - Ivan Salcedo
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-50000.0) debe ser un monto mayor a cero.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $364,140.00
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Sala de Capacitación Principal' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Switch Allied Telesis 28 Puertos': Solicitados 10, disponibles 3.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó reprogramación por motivos de fuerza mayor.
+2026-11-08 20:20:31 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:20:31 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:20:56 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1000222244444 - Diana
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-50000.0) debe ser un monto mayor a cero.
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $364,140.00
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Sala de Capacitación Principal' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Switch Allied Telesis 28 Puertos': Solicitados 10, disponibles 3.
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:23:32 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó reprogramación por motivos de fuerza mayor.
+2026-11-08 20:23:32 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-50000.0) debe ser un monto mayor a cero.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $364,140.00
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Sala de Capacitación Principal' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Switch Allied Telesis 28 Puertos': Solicitados 10, disponibles 3.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó reprogramación por motivos de fuerza mayor.
+2026-11-08 20:25:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:25:26 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-40000.0) debe ser un monto mayor a cero.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $342,720.00
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Reserva de Sala de Conferencias' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Alquiler de Equipo de Computo': Solicitados 10, disponibles 5.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó cancelación formal de la reserva.
+2026-11-08 20:32:54 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:32:54 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:33:44 [INFO] SoftwareFJ: Reserva creada [ID: res-2005] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:33:44 [INFO] SoftwareFJ: Reserva liquidada: res-2005 | Total calculado: $271,320.00
+2026-11-08 20:34:10 [INFO] SoftwareFJ: Reserva res-2005 CANCELADA. Motivo: saldo
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-40000.0) debe ser un monto mayor a cero.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $342,720.00
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Reserva de Sala de Conferencias' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Alquiler de Equipo de Computo': Solicitados 10, disponibles 5.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó cancelación formal de la reserva.
+2026-11-08 20:35:03 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:35:03 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:35:25 [ERROR] SoftwareFJ: Falla al registrar cliente desde consola | Detalle técnico: ErrorDatoInvalido - El formato del correo 'Ivandrisr@' es inválido.
+2026-11-08 20:36:16 [INFO] SoftwareFJ: Cliente registrado exitosamente: 105240878 - Ivan Salcedo
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-40000.0) debe ser un monto mayor a cero.
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva creada [ID: RES-1001] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva liquidada: RES-1001 | Total calculado: $342,720.00
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva RES-1001 confirmada exitosamente.
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva creada [ID: RES-1002] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #7 | Detalle técnico: ErrorServicioNoDisponible - Aforo excedido: la sala 'Reserva de Sala de Conferencias' admite máximo 25 personas (solicitado: 40).
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva creada [ID: RES-1003] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #8 | Detalle técnico: ErrorServicioNoDisponible - Stock insuficiente para 'Alquiler de Equipo de Computo': Solicitados 10, disponibles 5.
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva creada [ID: RES-1004] para el cliente Carlos Gomez en estado PENDIENTE.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #9 | Detalle técnico: ErrorReservaInvalida - No se puede confirmar la reserva RES-1004 sin haber procesado el costo previamente.
+2026-11-08 20:36:45 [INFO] SoftwareFJ: Reserva RES-1001 CANCELADA. Motivo: Cliente solicitó cancelación formal de la reserva.
+2026-11-08 20:36:45 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #10 | Detalle técnico: ErrorReservaInvalida - La reserva RES-1001 ya se encuentra cancelada.
+2026-11-08 20:39:26 [INFO] SoftwareFJ: Cliente registrado exitosamente: 1018456789 - Carlos Gomez
+2026-11-08 20:39:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #2 | Detalle técnico: ErrorDatoInvalido - El formato del correo 'correo_sin_arroba.com' es inválido.
+2026-11-08 20:39:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #3 | Detalle técnico: ErrorDatoInvalido - El nombre 'Andres Felipe 123' no puede contener dígitos numéricos.
+2026-11-08 20:39:26 [ERROR] SoftwareFJ: Falla de negocio controlada en Operación #5 | Detalle técnico: ErrorDatoInvalido - La tarifa base (-40000.0) debe ser un monto mayor a cero.
